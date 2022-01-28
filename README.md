@@ -2,7 +2,7 @@
 
 ## Brief Description
 Performing Aedes mosquito eggs localization based on HSV segmentation. 
-Segmentation in HSV color space is done by picking value ranges for each channel.
+Segmentation in HSV color space is done by picking value ranges for each channel for desired color to be segmented.
 Since the eggs mostly are black, value ranges used in this implementation are:
 ```
 Hue: 0 - 179
