@@ -44,7 +44,7 @@ try:
         (x, y, w, h) = cv2.boundingRect(c)
         
         # Filtering objects that are too small
-        if float(h)/H  >= 0.005 and float(w)/W >= 0.005:
+        if float(h)/H  >= 0.007 or float(w)/W >= 0.007:
             cv2.rectangle(img_to_show, (x-gamma, y-gamma), (x+w+gamma, y+h+gamma), (0,255,0), 2)
             if x-gamma < 0 or y-gamma < 0:
                 roi = object_img[0:y+h+gamma, 0:x+w+gamma]
